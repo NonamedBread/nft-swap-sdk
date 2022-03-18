@@ -34,6 +34,7 @@ export const getProxyAddressForErcType = (
     case 'ERC1155':
       return zeroExAddresses.erc1155Proxy;
     default:
+      console.log(assetType,typeof(assetType));
       throw new UnexpectedAssetTypeError(assetType);
   }
 };
