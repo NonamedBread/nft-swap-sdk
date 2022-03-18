@@ -30,6 +30,8 @@ export const getProxyAddressForErcType = (
     case 'ERC20':
       return zeroExAddresses.erc20Proxy;
     case 'ERC721':
+      console.log(assetType,typeof(assetType));
+
       return zeroExAddresses.erc721Proxy;
     case 'ERC1155':
       return zeroExAddresses.erc1155Proxy;
