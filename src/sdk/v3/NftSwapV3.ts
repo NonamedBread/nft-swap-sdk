@@ -312,6 +312,7 @@ class NftSwapV3 implements INftSwapV3 {
     otherOverrides?: Partial<ApprovalOverrides>
   ) {
     // TODO(johnrjj) - Look up via class fields instead...
+    console.log(asset,_walletAddress);
     const exchangeProxyAddressForAsset =
       otherOverrides?.exchangeProxyContractAddressForAsset ??
       getProxyAddressForErcType(
